@@ -34,20 +34,16 @@ let num2 = Number(readlineSync.question("두번쨰 값을 입력해주세요:"))
 let choice = readlineSync.question("원하는 사칙연산을 입력해주세요 1.더하기 , 2.빼기 , 3.곱하기 , 4.나누기 ,5.그만하기:")
     switch(choice){
         case "1": // 더하기
-            let result_add = num1 + num2
-            console.log(`${num1} + ${num2} = ${result_add}`)
+            console.log(`${num1} + ${num2} = ${num1+num2}`)
             continue
         case "2": // 빼기
-            let result_subtract = num1 - num2
-            console.log(`${num1} - ${num2} = ${result_subtract}`)
+            console.log(`${num1} - ${num2} = ${num1-num2}`)
             continue
         case "3": // 곱하기
-            let result_multiplication = num1 * num2
-            console.log(`${num1} * ${num2} = ${result_multiplication}`)
+            console.log(`${num1} * ${num2} = ${num1*num2}`)
             continue
         case "4": // 나누기
-            let result_division = num1 / num2
-            console.log(`${num1} / ${num2} = ${result_division}`)    
+            console.log(`${num1} / ${num2} = ${num1/num2}`)    
             continue
         case "5":
             console.log("사칙연산을 그만 하도록 하겠습니다")
@@ -64,8 +60,7 @@ break
 function printMultiplicationTable() {
     for(let i=2; i<=9; i++){
         for(let j=1; j<=9; j++){
-            let result = i*j
-            console.log(`${i} * ${j} = ${result}`)
+            console.log(`${i} * ${j} = ${i*j}`)
         }
     }
 }
