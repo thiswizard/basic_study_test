@@ -1,6 +1,4 @@
 
-
-
 const players = [
     {name:"차범근", speed: 95, shouting:100, grade: "d"},
     {name:"메시", speed: 93, shouting:90, grade: "c"},
